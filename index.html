@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100d20">
+  <meta name="description" content="Gemys Digital: televisión, radio online, noticias y producciones audiovisuales.">
+  <title>GEMYS DIGITAL | TV y Radio Online</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #100d20;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 22px 16px;
+      text-align: center;
+      background: #19132e;
+      border-bottom: 2px solid #a78bfa;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 3px;
+      margin: 0;
+    }
+
+    .logo span {
+      color: #bba4ff;
+    }
+
+    header p {
+      color: #d2c8ed;
+      margin: 5px 0 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 14px;
+      background: #211a39;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #c4b5fd;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 65px 20px;
+      background: linear-gradient(145deg, #211a39, #100d20);
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 6vw, 48px);
+      line-height: 1.15;
+      margin: 0 0 18px;
+    }
+
+    .hero h1 span {
+      color: #bba4ff;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto 25px;
+      color: #ddd6f5;
+    }
+
+    .button {
+      display: inline-block;
+      background: #a78bfa;
+      color: #160e2c;
+      padding: 12px 22px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #d0bcff;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: auto;
+      padding: 25px 18px 45px;
+    }
+
+    section {
+      margin: 28px 0;
+    }
+
+    h2 {
+      color: #c4b5fd;
+      font-size: 26px;
+    }
+
+    .card {
+      background: #1c1730;
+      border: 1px solid #40345e;
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .screen {
+      background: #080710;
+      border: 1px solid #554576;
+      border-radius: 12px;
+      padding: 35px 15px;
+      margin: 20px 0;
+    }
+
+    .screen .tv {
+      font-size: 48px;
+    }
+
+    .screen p {
+      color: #c9bfdc;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .grid .card {
+      text-align: left;
+    }
+
+    .grid .card .symbol {
+      font-size: 32px;
+    }
+
+    .grid h3 {
+      margin-bottom: 5px;
+      color: #ffffff;
+    }
+
+    .grid p {
+      color: #d0c8e0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px 16px;
+      background: #19132e;
+      color: #c9bfdc;
+      font-size: 14px;
+    }
+
+    footer strong {
+      color: #ffffff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <p class="logo">GEMYS <span>DIGITAL</span></p>
+    <p>Creatividad · Comunicación · Tecnología</p>
+  </header>
+
+  <nav>
+    <a href="#tv">Gemys TV</a>
+    <a href="#radio">Gemys FM</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#producciones">Producciones</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Ideas que se transforman.<br>
+      <span>Contenidos que conectan.</span>
+    </h1>
+
+    <p>
+      Bienvenidos al universo Gemys: un espacio de
+      comunicación, producción audiovisual y difusión
+      digital para personas, emprendedores y empresas.
+    </p>
+
+    <a class="button" href="#tv">Explorar Gemys TV</a>
+    <a class="button" href="#radio">Escuchar Gemys FM</a>
+  </div>
+
+  <main>
+
+    <section id="tv">
+      <h2>📺 GEMYS TV</h2>
+
+      <div class="card">
+        <div class="screen">
+          <div class="tv">▶</div>
+          <h3>Tu espacio audiovisual</h3>
+          <p>
+            Próximamente: videos, entrevistas, noticias
+            y producciones originales de Gemys.
+          </p>
+        </div>
+
+        <p>
+          Creamos contenidos para informar, comunicar
+          y dar visibilidad a las ideas y los emprendimientos.
+        </p>
+      </div>
+    </section>
+
+    <section id="radio">
+      <h2>📻 GEMYS FM ONLINE</h2>
+
+      <div class="card">
+        <h3>Tu compañía, estés donde estés</h3>
+        <p>
+          Sintonizá Gemys FM y disfrutá de nuestra
+          propuesta radial por internet.
+        </p>
+
+        <a class="button"
+           href="http://45.182.223.219:8000/stream"
+           target="_blank"
+           rel="noopener noreferrer">
+          ▶ ESCUCHAR RADIO EN VIVO
+        </a>
+
+        <p>
+          Si el reproductor no se abre, probá nuevamente
+          desde el navegador de tu dispositivo.
+        </p>
+      </div>
+    </section>
+
+    <section id="noticias">
+      <h2>📰 NOTICIAS Y ACTUALIDAD</h2>
+
+      <div class="card">
+        <h3>Un espacio para contar lo que importa</h3>
+        <p>
+          Esta sección está preparada para incorporar
+          noticias, entrevistas, novedades locales
+          e historias de nuestra comunidad.
+        </p>
+      </div>
+    </section>
+
+    <section id="producciones">
+      <h2>✨ EL UNIVERSO GEMYS</h2>
+
+      <div class="grid">
+        <div class="card">
+          <div class="symbol">🎬</div>
+          <h3>Producción audiovisual</h3>
+          <p>
+            Videos, contenidos creativos y piezas
+            audiovisuales para internet.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">📢</div>
+          <h3>Publicidad y comunicación</h3>
+          <p>
+            Spots de radio, difusión comercial y
+            comunicación para emprendedores.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="symbol">📸</div>
+          <h3>Gemys Imágenes Express</h3>
+          <p>
+            Fotografía, edición, digitalización
+            y reproducción de imágenes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <strong>GEMYS DIGITAL</strong>
+    <p>De lo digital a lo virtual.</p>
+    <p>© 2026 Gemys · Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
